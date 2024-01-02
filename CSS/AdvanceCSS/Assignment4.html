@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost&family=Poppins&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+        }
+        header,footer{
+            width: 1500px;
+            margin:auto;
+        }
+        .navbar{
+            background-color: lightgray;
+            margin-top: 15px;
+        }
+        .navdiv{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar ul{
+            margin-right: 80px;
+        }
+        .navbar li{
+            list-style: none;
+            display: inline-block;
+        }
+        .navbar li a{
+            color: rgb(9, 78, 107);
+            margin-right: 10px;
+            padding: 12px;
+        }
+        .logo{
+            margin-left: 90px;
+        }
+        .navbar li :hover{
+            background-color: black;
+            color: white;
+        }
+        .banner{
+            width: 1500px;
+            margin:auto;
+            display:grid;
+            grid-template-columns: 250px 1000px 250px;
+            text-align: center;
+            align-items: center;
+            background-color: rgb(0, 187, 255);
+            color: white;
+            height: 150px;
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        img{
+            height:60px;
+            width: 60px;
+        }
+        .main{
+            display: grid;
+            width:1265px;
+            margin:auto;
+            height:400px;
+            grid-template-columns: 580px 675px;
+            grid-template-rows: 260px 130px;
+            gap:10px;
+        }
+        .main >aside{
+            background-color: yellow;
+            grid-row: 1/3;
+            position: relative;
+            padding: 5px;
+        }
+        .overlap{
+            height: 300px;
+            width: 300px;
+            background-color: pink;
+            position: absolute;
+            top: 20px;
+            left: -40px;
+        }
+        .top{
+            background-color: orange;
+        }
+        .bottom{
+            background-color: greenyellow;
+        }
+        footer{
+            height:66.4px;
+            margin-top: 10px;
+            background-color: rgb(6, 101, 138);
+        }
+        form{
+            padding:5px;
+        }
+        .entry{
+            background-color: rgb(238, 189, 98);
+            border: 1px solid rgba(238, 238, 238, 0.782);
+            border-radius: 2px;
+            display: block;
+            width: 500px;
+            height: 30px;
+            margin-top: 25px;
+            margin-left: 25px;
+            margin-bottom: 10px;
+        }
+        #submit{
+            width:200px;
+            color: white;
+        }
+        #submit:hover{
+            cursor: pointer;
+        }
+        #footer-nav{
+            display:flex;
+            height: inherit;
+            justify-content: center;
+            align-items: center;
+        }
+        #footer-nav li{
+            list-style: none;
+            border-right: 1px solid white;
+        }
+        #footer-nav li:last-of-type{
+            border-right: none;
+        }
+        #footer-nav a{
+            color: white;
+            margin-right: 5px;
+            margin-left: 5px;
+            padding: 10px;
+        } 
+        #footer-nav a:hover{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <nav class="navdiv">
+            <div class="logo">
+                <img src="./logo.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Profile</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="leftslide">
+            <img src="./left-arrow.png" alt="">
+        </div>
+        <div class="center">
+            BANNER
+        </div>
+        <div class="rightslide">
+            <img src="./right-arrow.png" alt="">
+        </div>
+    </section>
+    <section class="main">
+        <aside>
+            <div class="overlap"></div>
+        </aside>
+        <main class="top">
+            <form>
+                <input type="text" name="tb1" class="entry">
+                <input type="text" name="tb2" class="entry">
+                <select name="options" id="options" class="entry">
+                    <option value="Option 1"></option>
+                    <option value="Option 2"></option>
+                </select>
+                <input type="Submit" value="Submit" id="submit" class="entry">
+            </form>
+        </main>
+        <main class="bottom"></main>
+    </section>
+    <footer>
+        <ul id="footer-nav">
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Profile</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

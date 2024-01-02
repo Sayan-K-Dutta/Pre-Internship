@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".section1").click(function(){
+                $(".section2").slideDown("slow");
+        });
+    });
+    </script>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    .section1,.section2{
+        width: 1450px;
+        margin: auto;
+        text-align: center;
+        padding: 10px;
+    }
+    .section1{
+        margin-top:40px;
+        background-color:rgb(96, 197, 96);
+    }
+    .section2{
+        padding:300px;
+        background-color:skyblue;
+        display: none;
+    }
+</style>
+<body>
+    <div class="section1">Click me to slide down panel</div>
+    <div class="section2">Hello World!</div>
+</body>
+</html>

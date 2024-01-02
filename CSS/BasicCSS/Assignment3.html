@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    .container{
+        margin:auto;
+        padding: 30px 0px;
+    }
+    .upper_content{
+        width: 1475px;
+        height: 400px;
+        background-color: #e60000;
+        overflow:auto;
+        margin:auto;
+        padding: 50px;
+    }
+    .content{
+        width:650px;
+        float: left;
+        padding: 30px;
+    }
+    .image{
+        width:600px;
+        float: right;
+        padding: 30px;
+    }
+    .lower_content{
+        width: 1475px;
+        height: 268px;
+        background-color: red;
+        display: table;
+        margin: auto;
+    }
+    .row{
+        display: table-row;
+    }
+    .item{
+        display: table-cell;
+        width: 460px;
+        padding:50px;
+        background-color: rgb(84, 18, 18);
+        text-align: left;
+        border-right: 3px solid red;
+        
+    }
+    .item:last-of-type{
+        border-right: none;
+    }
+    p{
+        color: rgba(255, 255, 255, 0.55);
+    }
+    h3{
+        font-weight: 200;
+        color: white;
+        padding-bottom: 10px;
+    }
+    h1{
+        font-weight: 200;
+        font-size: 50px;
+        color: white;
+    }
+    .upper_content p{
+        margin-top: 50px;
+        font-size: 20px;
+        color: white;
+        padding-left: 30px;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="upper_content">
+            <div class="content">
+                <h1>Down with the state</h1>
+                <p>
+                    Abandon the left vs. right paradigm and adopt new ideals, where
+                    consistency and logic reign supreme.
+                </p>
+            </div>
+            <div class="image">
+                <img src="./images/img1.png" alt="image">
+            </div>       
+        </div>
+        <div class="lower_content">
+            <div class="row">
+                <div class="item">
+                    <h3>But what about the roads?</h3>
+                    <p>
+                        You just don't understand economics like supply and demand.
+                        Don't worry kiddo, where there's a demand there will be a 
+                        supply; we'll all have our roads.
+                    </p>
+                </div>
+                <div class="item">
+                    <h3>Is taxation theft?</h3>
+                    <p>
+                        If I came to your house with some heavily armed buddies,
+                        demanded that you and your neighbors give me a percentage
+                        of your income, in return for some crappy monopolized 
+                        services that you didn't ask for, would you consider that theft?
+                    </p>
+                </div>
+                <div class="item">
+                    <h3>So,what you're saying is...?</h3>
+                    <p>
+                        Libertarians want to live in a world where gay couples
+                        can protect their poppy fields with fully automatic
+                        weapons.
+                    </p>
+                    <p>
+                        A world where voluntaryism and property rights are
+                        treated with the highest respect.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
